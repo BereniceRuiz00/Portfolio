@@ -1,0 +1,91 @@
+/* Position:  
+     static --> No se mueve, posicion por defecto
+     relative -> se usa para moverse desde su posicion natural 
+     fixed --> funciona desde viewport (ventana que se alcanza ver en página)
+     absolute --> toma en cuenta el cuadrito que lo engloba
+     sticky --> se mantiene en su posicion en todo el viewport.
+     */
+/* Display:
+    posición de los elementos
+*/
+/* Grid
+*/
+
+/* nuevas etiquetas 28/07/2022 */
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex; /*display flex porque solo ocupamos una columna*/
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background: #eaeaea;
+  /* animacion */
+  transition: top 500ms ease-in-out;
+}
+
+.links {
+  display: flex;
+  margin: 0 -1em;
+}
+
+.links a {
+  /* etiquetas dentro de una clase */
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: black;
+  text-decoration: none; /*quitar decoracion de texto predeterminado*/
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* GRID BOOTSTRAP */
+
+
+/* Fin etiquetas nuevas */
+
+/* Estilo index portfolio */
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background-color: #f5f7fb;
+}
+
+/* App */
+.App {
+    /* comentamos para que funcione navbar */
+  /* display: flex; */ 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* Formulario */
+label,
+textarea {
+  margin: 10px;
+}
+
+/* Tabla Tecnologia*/
+table,
+th,
+td {
+  border: 1px solid rgb(189, 186, 186);
+  border-collapse: collapse;
+  width: 500px;
+}
+/* Fin de style index */
