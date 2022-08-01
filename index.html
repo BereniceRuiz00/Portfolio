@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-    <link rel="stylesheet" href="/styles/main.css" />
+    
+
+    <!-- Fuentes Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CDN para Bootstrap 5 CSS -->
     <link
@@ -14,105 +22,109 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/styles/main.css" />
   </head>
 
   <body>
     <div class="App">
-      <!-- lista de soluciones Caso de homero -->
-      <!-- Barra de navegacion -->
-      <div class="navbar">
+      <!-- Navbar antiguo -->
+      <!-- <div class="navbar">
         <nav>
-          <!-- Div logo -->
+       
           <div class="logo">Logo</div>
-          <!-- Div links -->
+        
           <div class="links">
             <a href="#TablaTec">Tecnologías</a>
             <a href="#formulario">Contacto</a>
             <a href="#redessociales">Redes Sociales</a>
           </div>
         </nav>
-      </div>
-      <!-- Fin barra de navegacion -->
+      </div> -->
 
-      <!-- Ejemplo GRID bootstrap -->
-      <div class="container">
-        <div class="row-5">
-          <div class="col-4 bg-warning">Col1</div>
-          <div class="col-3 bg-info">Col2</div>
-          <div class="col-6 bg-danger">Col3</div>
+      <!-- Navbar B5 -->
+
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-mio">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">BR</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#project">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- about -->
+      <div id="about" class="container">
+        <div class="row justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="/public/images/colitas.jpg"card-img-top" alt="Colitas de hamtaro" />
+            <div class="card-body">
+              <h5 class="card-title">Berenice Ruiz</h5>
+              <p class="card-text">
+                Un texto de ejemplo rápido para colocal cerca del título de la
+                tarjeta y componer la mayor parte del contenido de la tarjeta.
+              </p>
+              <a href="#" class="btn btn-primary">Contáctame</a>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-4 bg-warning">Col1</div>
-          <div class="col-3 bg-info">Col2</div>
+      </div>
+      <!-- Contacto -->
+      <div id="contact" class="container">
+        <!-- titulo -->
+         <div class="row justify-content-center">
+          <div class="col text-center">
+            <h2><b>Contacto</b></h2>
+          </div>
+        </div>
+        <!-- formulario-->
+        <div class="row justify-conrent-center">
+          <form>
+            <!-- correo -->
+<div class="col-6 mx-auto">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+            </div>
+          </div>
+          <!-- Mensaje -->
+            <div class="col-6 mx-auto">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+          </div>
+          <!-- Verificacion -->
+            <div class="col-6 mx-auto">
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+            </div>
+               <!-- btn enviar -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          
+            </div>
+
+          </form>
         </div>
       </div>
-
-      <!-- Tabla de tecnologias -->
-      <div id="TablaTec" class="tab-tec">
-        <h3>Tecnologias</h3>
-        <table>
-          <thead>
-            <!-- Encabezado -->
-            <tr>
-              <th>Tecnologia</th>
-              <th>Conocimiento</th>
-              <th>End</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <!-- fila 1 -->
-            <tr>
-              <td>HTML5</td>
-              <td>80%</td>
-              <td>Front-end</td>
-            </tr>
-            <!-- fila 2 -->
-            <tr>
-              <td>CSS</td>
-              <td>90%</td>
-              <td>Front-end</td>
-            </tr>
-            <!-- fila 3-->
-            <tr>
-              <td>JavaScript</td>
-              <td>100%</td>
-              <td>Front-end</td>
-            </tr>
-            <!-- fila 3-->
-            <tr>
-              <td>MySQL</td>
-              <td>100%</td>
-              <td>Back-end</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- Fin tabla -->
-
-      <!-- Formulario  de contacto-->
-      <div id="formulario" class="form-contact">
-        <h3>Contacto</h3>
-        <form action="">
-          <label for="name">Nombre:</label>
-          <input type="text" name="" id="name" />
-          <br /><br />
-          <label for="nempresa">Empresa:</label>
-          <input type="text" id="nempresa" />
-          <br /><br />
-          <label for="correo">Email:</label>
-          <input type="email" name="" id="correo" />
-          <br /><br />
-          <label for="telefono">Telefono:</label>
-          <input type="tel" name="" id="telefono" />
-          <br /><br />
-          <label for="mensaje">Mensaje:</label><br />
-          <textarea name="" id="Mensajer" cols="30" rows="10"></textarea>
-          <br />
-          <input type="submit" value="Enviar" />
-        </form>
-      </div>
-      <!--Fin de formulario de contacto  -->
 
       <!-- Redes Sociales -->
       <div id="redessociales" class="social-links">
